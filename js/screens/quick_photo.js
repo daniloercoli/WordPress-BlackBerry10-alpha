@@ -86,8 +86,8 @@ function takePicture() {
 		}
 	}
 	else {
-		onPhotoCaptured("http://localhost/wp4bb10/img/splash.png");
-		//onPhotoCaptured("http://daniloercoli.files.wordpress.com/2012/01/20120108-004118.jpg");
+		//onPhotoCaptured("http://localhost/wp4bb10/img/splash.png");
+		onPhotoCaptured("http://daniloercoli.files.wordpress.com/2012/01/20120108-004118.jpg");
 	}
 }
 
