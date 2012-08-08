@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+.ef-cntr {
+	float: left;
+	position: relative;
+	margin: 0px 7px 0px 0px;
+	border: 3px solid black;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 1px 1px 2px #111;
+	-webkit-box-shadow: 1px 1px 2px #111;
+	box-shadow: 1px 1px 2px #111;
+	height: 75px;
+	width: 79px;
+}
+
+.ef-cntr div {
+	position: absolute;
+	background-color: #333;
+	width: 74px;
+	opacity: 0.9;
+	text-shadow: 1px 1px 1px black;
+	z-index: 3;
+	bottom: 0;
+	color: white;
+	font-weight: bold;
+	font-size: 0.90em;
+	padding: 3px;
+	text-align: center;
+	visibility: hidden;
+}

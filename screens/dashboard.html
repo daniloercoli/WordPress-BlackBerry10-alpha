@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<div data-bb-type="screen" data-bb-title="WordPress Home">
+	<script type="text/javascript" src="js/screens/dashboard.js"></script>
+	<div data-bb-type="title" data-bb-caption="My Blogs" ></div>	
+	<select data-bb-style="stretch" onchange="blog_changed();" id="blogs_list"></select>
+
+	<div data-bb-type="image-list"  data-bb-style="arrowlist">
+		<div data-bb-type="item" data-bb-img="img/icons/icon1.png" data-bb-title="Quick Photo" onclick="bb.pushScreen('screens/quick_photo.html', 'quick_photo');"></div>
+		<div data-bb-type="item" data-bb-img="img/icons/icon2.png" data-bb-title="Comments" onclick="bb.pushScreen('screens/comments.html', 'comments');"></div>
+		<div data-bb-type="item" data-bb-img="img/icons/icon3.png" data-bb-title="Test Filters" onclick="bb.pushScreen('screens/test_filters.html', 'test_filters');"></div>
+	</div>
+	
+	<div data-bb-type="menu">
+        <div data-bb-type="menu-item" data-bb-caption="Delete Blog" data-bb-img="img/icons/icon1.png" onclick="delete_blog();"></div>
+        <div data-bb-type="menu-item" data-bb-caption="Add Blog" data-bb-img="img/icons/icon2.png" onclick="bb.pushScreen('screens/login.html', 'login_home');"></div>
+        <div data-bb-type="menu-separator"></div>
+        <div data-bb-type="menu-item" data-bb-img="img/icons/icon3.png" onclick="bb.pushScreen('screens/about.html', 'about');">About</div>
+    </div>
+</div>

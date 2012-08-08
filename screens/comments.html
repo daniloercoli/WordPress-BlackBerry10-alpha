@@ -1,0 +1,20 @@
+<div data-bb-type="screen" data-bb-title="Comments" data-bb-effect="slide-left">
+	<script type="text/javascript" src="js/screens/comments.js"></script>
+	<div data-bb-type="title" data-bb-caption="Comments" data-bb-back-caption="Back"></div>	
+	<div data-bb-type="activity-indicator" data-bb-size="small" id="loading_indicator" style="display: none;"></div>
+	<div data-bb-type="image-list" id="comments_list" data-bb-context="true">
+	
+	</div>
+	<div data-bb-type="action-bar" data-bb-back-caption="Back">
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="img/icons/icon1.png" onclick="get_comments()" id="refresh">Refresh</div>
+	</div>
+	
+	<div data-bb-type="context-menu" id="my_context_menu">
+      <div data-bb-type="action" data-bb-img="img/icons/toolbar_approve.png" id="approve_action">Approve</div>
+      <div data-bb-type="action" data-bb-img="img/icons/toolbar_unapprove.png" id="unapprove_action">Unapprove</div>
+      <div data-bb-type="action" data-bb-img="img/icons/toolbar_flag.png" id="spam_action">Spam</div>
+      <div data-bb-type="action" data-bb-img="img/icons/toolbar_delete.png" id="delete_action">Delete</div>
+      <div data-bb-type="action" data-bb-img="img/icons/icon1.png" id="reply_action">Reply</div>
+      <div data-bb-type="action" data-bb-img="img/icons/icon1.png" onclick="alert('Delete');">Edit</div>
+   </div>
+</div>

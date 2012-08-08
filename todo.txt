@@ -1,0 +1,19 @@
+* General
+- dashboard.html has a screen menu in it (https://github.com/blackberry/bbUI.js/wiki/Screen-Menus), but it doesn't work. Tested on simulator and Ripple. Swipe down, swipe down!!
+- Accessing the Comment detail page seems to break UI
+- Need to find a nice way to pass data between pages/screen without using global variable.
+- Error dialogs are missing. We are using alert, need to switch to Dialog.
+- Loading divs are missing 
+
+* Comments Screen
+- Hide/show context menu items in the comments screen depending on the comment's status
+- Add the moderating actions to the menu items 
+
+* QuickPhoto
+- Uploaded images are empty on the Dev simulator. Guess the canvas trick is not working fine. Need to write a C++ 
+component or use AtomPub, since canvas is too memory consumption.
+
+* Low priority
+- remove the referecens to EW.LogSystem.debug
+- Use Database and not localStorage
+- Icons

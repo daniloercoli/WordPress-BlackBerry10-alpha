@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<div data-bb-type="screen" data-bb-title="Quick Photo" data-bb-effect="slide-left">
+	<script type="text/javascript" src="js/screens/quick_photo.js"></script>
+	<div data-bb-type="title" data-bb-caption="Quick Photo" data-bb-back-caption="Cancel" data-bb-action-caption="Publish" onactionclick="startUpload();"></div>
+
+	<div style="margin: 0px auto 0px auto; display: none;" data-bb-type="activity-indicator" data-bb-size="large" id="loading_indicator"></div>
+
+	<div data-bb-type="round-panel">
+		<div data-bb-type="label-control-container">
+			<div data-bb-type="row">
+				<div data-bb-type="label">Title:</div>
+				<input type="text" id="newPostTitle" value="" />
+			</div>
+			<div data-bb-type="row">
+				<div data-bb-type="label">Tags:</div>
+				<input type="text" id="newPostTags" value="" />
+			</div>
+		</div>
+		<span class="howto">Separate tags with commas.</span>
+	</div>
+
+	<div data-bb-type="round-panel">
+		<div data-bb-type="panel-header">Content</div>
+		<textarea id="newPostContent"></textarea>
+	</div>
+	
+	<div data-bb-type="round-panel" style="display: none;" id="media_box">
+		<div data-bb-type="panel-header">Media</div>
+	</div>
+	<canvas id="area" style="visibility: hidden;"></canvas>
+
+	<!--  Used to show the library files selector. Not shown on the screen -->
+	<form action="#" style="visibility: hidden;" />
+		<input type="file" id="txtFile" name="uploadedfile" /> 
+	</form>
+
+	<div data-bb-type="action-bar">
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="img/icons/icon20.png" onclick="takePicture();" id="take_picture_button">Take Picture</div>
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="img/icons/icon20.png" onclick="" id="pick_from_library">Library</div>
+	</div>	
+</div>

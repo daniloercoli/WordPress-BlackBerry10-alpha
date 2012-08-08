@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="x-blackberry-defaultHoverEffect" content="false" />
+		<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,target-densitydpi=device-dpi" />
+		<link  rel="stylesheet" type="text/css" href="libs/bbui-0.9.3.css"><link />
+		<script type="text/javascript" src="libs/bbui-0.9.3.js"></script>
+		<script type="text/javascript" src="js/utils.js"></script>
+		<script type="text/javascript" src="js/ajax.js"></script>
+		<script type="text/javascript" src="libs/xmlrpc-client.js"></script>
+		<script type="text/javascript" src="libs/xmlrpc-connections.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="libs/jquery.min.js"></script>
+		<script type="text/javascript">
+		// You must call init on bbUI before any other code loads.  	
+		 bb.init({
+			 onscreenready : pre_traffic_cop, // Fires "before" styling is applied and "before" the screen is inserted in the DOM
+			 ondomready : post_traffic_cop, // Fires "after" styling is applied and "after" the screen is inserted in the DOM
+			 onbackkey: handleBackHardwareKey, // Custom handler for back key on BlackBerry 5/6/7 smartphones
+			 });
+		</script>
+		<title> WordPress for BlackBerry 10 0.1 Alpha</title>
+	</head>
+	<body onload="do_just_launched();">	
+		<!-- LOADER -->
+		<div id="results_loader" class="popup" style="display: none;">
+			<table class="popup_window">
+				<tr><td>&nbsp;</td></tr>
+				<tr class="background">
+					<td class="loader">
+						<div id="loaderLoadingTitle" class="title"></div>
+						<img id="loaderProgressBar" src="img/loading1.gif" alt="Loader" />
+						<div id="loaderLoadingSubtitle" class="subtitle"></div>
+						<p align="center">
+							<a href="#" id="loaderLoadingButton" class="button-flat">Cancel</a>
+						</p>
+				    </td>
+				</tr>                
+				<tr><td>&nbsp;</td></tr>
+			</table>
+		</div>
+	</body>
+</html>

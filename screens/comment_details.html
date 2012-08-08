@@ -1,0 +1,28 @@
+<div data-bb-type="screen" data-bb-title="Comments" data-bb-effect="slide-left">
+	<script type="text/javascript" src="js/screens/comment_details.js"></script>
+	<div data-bb-type="title" data-bb-caption="Comment Details" data-bb-back-caption="Back"></div>
+      
+	<div data-bb-type="round-panel">
+		<div data-bb-type="panel-header">Author Details</div>
+		<img src="" id="gravatar" />
+		<span id="author_name"></span>
+		<div id="author_email"></div>
+		<div id=author_url></div>
+	</div>
+
+	<div data-bb-type="round-panel">
+		<div data-bb-type="panel-header">Comments Details</div>
+		<div id="post_title"></div>
+		<div id="status"></div>
+	</div>
+	
+	<div id="comment_content"></div>
+
+	<div data-bb-type="action-bar">
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="img/icons/icon1.png" id="approve_hold">Approve</div>
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="img/icons/icon1.png" id="spam">Spam</div>
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="img/icons/icon1.png" id="delete">Delete</div>
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="img/icons/icon1.png" onclick="reply2Comment();" id="replay">Replay</div>
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="img/icons/icon1.png" onclick="alert( 'Niet' );" id="edit">Edit</div>
+	</div>
+</div>
